@@ -160,64 +160,7 @@
   transform: scale(1.1);
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-div pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-figure,
-header,
-nav,
-section,
-article,
-aside,
-footer,
-figcaption {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -296,11 +239,6 @@ ul {
   margin-bottom: 0px;
 }
 
-/* 
----------------------------------------------
-global styles
---------------------------------------------- 
-*/
 html,
 body {
   background: #fff;
@@ -626,7 +564,6 @@ blockquote .text p {
 }
 
 blockquote .text:before {
-  font-family: FontAwesome;
   content: "\f10d";
   position: absolute;
   left: 0px;
@@ -637,7 +574,6 @@ blockquote .text:before {
 }
 
 blockquote .text:after {
-  font-family: FontAwesome;
   content: "\f10e";
   position: absolute;
   right: 0px;
@@ -682,11 +618,6 @@ blockquote .author {
   }
 }
 
-/* 
----------------------------------------------
-header
---------------------------------------------- 
-*/
 .header-area {
   position: fixed;
   top: 0px;
@@ -751,7 +682,7 @@ header
 
 .header-area .main-nav .nav li.submenu:after {
   font-family: FontAwesome;
-  content: "\f107";
+  content: "\f078";
   font-size: 12px;
   color: #6F8BA4;
   position: absolute;
@@ -1217,11 +1148,6 @@ header
   }
 }
 
-/* 
----------------------------------------------
-welcome
---------------------------------------------- 
-*/
 .welcome-area {
   overflow: hidden;
   position: relative;
@@ -1440,11 +1366,6 @@ welcome
   }
 }
 
-/* 
----------------------------------------------
-features
---------------------------------------------- 
-*/
 .features-small-item {
   display: block;
   background: #FFFFFF;
@@ -1680,11 +1601,6 @@ features
   }
 }
 
-/* 
----------------------------------------------
-parallax
---------------------------------------------- 
-*/
 .parallax {
   min-height: 215px;
   overflow: hidden;
@@ -1850,11 +1766,6 @@ parallax
   }
 }
 
-/* 
----------------------------------------------
-team
---------------------------------------------- 
-*/
 .team-item {
   background: #fff;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
@@ -1980,11 +1891,6 @@ team
   line-height: 26px;
 }
 
-/* 
----------------------------------------------
-pricing
---------------------------------------------- 
-*/
 .pricing-item {
   background: #FFFFFF;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
@@ -2141,11 +2047,6 @@ pricing
   position: relative;
 }
 
-/* 
----------------------------------------------
-blog
---------------------------------------------- 
-*/
 .blog-post-thumb {
   text-align: center;
   margin-bottom: 30px;
@@ -2506,11 +2407,6 @@ blog
   }
 }
 
-/* 
----------------------------------------------
-footer
---------------------------------------------- 
-*/
 footer {
   background: #585CE9;
   padding-top: 70px;
@@ -2620,11 +2516,6 @@ footer .copyright {
   }
 }
 
-/* 
----------------------------------------------
-pages
---------------------------------------------- 
-*/
 .page {
   background: #F7FAFD;
 }
@@ -2701,7 +2592,6 @@ pages
 }
 
 .page .cover .page-top .breadcrumb li:after {
-  font-family: FontAwesome;
   content: "\f105";
   margin-left: 10px;
   color: #E5E9F7;
@@ -2856,11 +2746,6 @@ pages
   }
 }
 
-/* 
----------------------------------------------
-faq
---------------------------------------------- 
-*/
 .faq-wrapper .faq-header {
   margin-bottom: 0px;
 }
@@ -2963,11 +2848,6 @@ faq
   }
 }
 
-/* 
----------------------------------------------
-aside
---------------------------------------------- 
-*/
 aside.default-aside {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -3022,7 +2902,6 @@ aside.default-aside .sidebar ul li a:hover {
 }
 
 aside.default-aside .sidebar ul li a:after {
-  font-family: FontAwesome;
   content: "\f105";
   position: absolute;
   left: 30px;
@@ -3172,11 +3051,6 @@ aside.default-aside .sidebar .widget-tags a:hover {
   color: #fff;
 }
 
-/* 
----------------------------------------------
-contact
---------------------------------------------- 
-*/
 .contact {
   float: left;
   width: 100%;
@@ -3333,11 +3207,6 @@ contact
   }
 }
 
-/* 
----------------------------------------------
-preloader
---------------------------------------------- 
-*/
 #preloader {
   overflow: hidden;
   background-image: linear-gradient(135deg, #585CE9 0%, #5C83E3 100%);

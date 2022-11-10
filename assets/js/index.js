@@ -29,6 +29,7 @@ $(window).scroll(function () {
         setTimeout(function () { $(".animated-scroll-small-3").animate({ top: '0', opacity: '1' }, 'slow') }, 400);
         setTimeout(function () { $(".animated-scroll-small-4").animate({ top: '0', opacity: '1' }, 'slow') }, 600);
         isAnimated1 = true;
+        console.log("sdadas");
     }
 
     // 2nd animated elements
@@ -95,4 +96,16 @@ $(".submenu>a").click(function (e) {
     e.preventDefault();
     $(".submenu ul").removeClass("active");
     this.nextElementSibling.classList.add("active");
+})
+
+$(".btn-home").click(function(e){
+    e.preventDefault();
+    if(this.nextElementSibling.style.display === "block")
+        this.nextElementSibling.style.display = "none";
+    else{
+        $(".acc-element").css("display","none");
+        $(".btn-home").removeClass("active");
+        this.nextElementSibling.style.display = "block";
+        this.children[0].style.transform = "rotate(90deg)";
+    }
 })

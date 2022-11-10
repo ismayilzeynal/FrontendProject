@@ -237,6 +237,15 @@
   transform: scale(1.1);
 }
 
+.imgfix_top_container {
+  overflow: hidden;
+}
+
+.parallax {
+  background-size: cover;
+  background-position: center center;
+}
+
 * {
   margin: 0;
   padding: 0;

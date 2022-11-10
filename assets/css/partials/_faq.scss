@@ -1,0 +1,104 @@
+.faq-wrapper .faq-header {
+    margin-bottom: 0px;
+  }
+  
+  .faq-wrapper .faq-header h2 {
+    font-weight: 400;
+    font-size: 30px;
+    color: #585CE9;
+    letter-spacing: 1.88px;
+    margin-bottom: 20px;
+  }
+  
+  .faq {
+    background: #FFFFFF;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .faq .card {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #F7FAFD;
+  }
+  
+  .faq .card .card-header {
+    padding: 0px;
+    border: none;
+    background: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .faq .card .card-header:hover {
+    background: #F7FAFD;
+    padding-left: 10px;
+  }
+  
+  .faq .card .card-header .faq-title {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #3B566E;
+    text-decoration: none !important;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .faq .card .card-header .faq-title .badge {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 14px;
+    // float: left;
+    border-radius: 100px;
+    border-top-right-radius: 0;
+    text-align: center;
+    background: #585CE9;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 20px;
+  }
+  
+  .faq .card .card-body {
+    padding: 30px;
+    padding-left: 35px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6F8BA4;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-top: 1px solid #F3F8FF;
+  }
+  
+  .faq .card .card-body p {
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .88px;
+    line-height: 28px;
+  }
+  
+  @media (max-width: 991px) {
+    .faq {
+      margin-bottom: 30px;
+    }
+    .faq .card .card-header .faq-title {
+      line-height: 26px;
+      margin-top: 10px;
+    }
+  }

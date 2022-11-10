@@ -5,9 +5,8 @@ let isAnimated4 = false;
 let isAnimated5 = false;
 
 // session storage operations
-if(sessionStorage.getItem("selectedPlan"))
-{
-    let selectedCardId=sessionStorage.getItem("selectedPlan");
+if (sessionStorage.getItem("selectedPlan")) {
+    let selectedCardId = sessionStorage.getItem("selectedPlan");
     document.getElementById(selectedCardId).classList.add("bg-secondary", "selected");
     $(".selected").html("SELECTED");
 }
@@ -70,7 +69,7 @@ $(window).scroll(function () {
 
 
 // select plan
-$(".select-plan").click(function(e){
+$(".select-plan").click(function (e) {
     e.preventDefault();
     $(".select-plan").removeClass("bg-secondary");
     $(".select-plan").removeClass("selected");
@@ -80,6 +79,20 @@ $(".select-plan").click(function(e){
 });
 
 
+// module
 
+$(".menu-trigger").click(function (e) {
+    let burgerNav = document.getElementById("burger-nav");
+    if (burgerNav.style.display === "block")
+        burgerNav.style.display = "none";
+    else
+        burgerNav.style.display = "block";
 
+    $(".menu-trigger").toggleClass("active");
+})
 
+$(".submenu>a").click(function (e) {
+    e.preventDefault();
+    $(".submenu ul").removeClass("active");
+    this.nextElementSibling.classList.add("active");
+})
